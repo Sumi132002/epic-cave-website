@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+
+.background-image {
+    background-image: url('https://blueroseone.com/publish/wp-content/uploads/2022/11/Just-Books-in-Bangalore-best-libraries-in-Bangalore.png'); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.welcome-text h2 {
+    font-size: 2em;
+}
+
+.welcome-text h1 {
+    font-size: 3em;
+}
+
+.book-now {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    height: 50px; 
+    margin-right: 10px; 
+}
+
+
+
+
+/* Label and Input */
+label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"], input[type="date"], select {
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+.auth-buttons {
+    margin-left: 20px;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+}
+.auth-buttons button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Link Styling */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    input, select,.auth-buttons button {
+        font-size: 14px;
+    }
+}
